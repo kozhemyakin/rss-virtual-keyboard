@@ -1,0 +1,77 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: monospace;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+.title {
+  font-size: 24px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.input-text {
+  color: #000000;
+  width: 684px;
+  height: 100px;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.hint {
+  font-size: 14px;
+  color: rgb(0, 0, 0);
+}
+
+.keyboard {
+  display: flex;
+  gap: 4px 3px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: flex-start;
+  width: 684px;
+}
+
+.keyboard .key {
+  color: rgb(204, 204, 204);
+  background: black;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+  transition: 0.3s;
+  font-size: 16px;
+}
+
+.keyboard .key:hover {
+  background: rgb(113, 160, 120);
+}
+
+.keyboard .key.key-down {
+    background: #596835;
+    color: white;
+    transition: 0.1s;
+    box-shadow: none;
+  }
+
+.hidden {
+  display: none;
+}
